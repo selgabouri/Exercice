@@ -1,2 +1,2 @@
 # Exercice
-Front Execricei
+Front Exercice
