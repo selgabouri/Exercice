@@ -1,0 +1,3 @@
+function openAddUserModal() {
+    $("#addUserModal").modal()
+}
