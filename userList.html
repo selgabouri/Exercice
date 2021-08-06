@@ -6,55 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>User List</title>
-</head>
 <body>
-    <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Date de création</th>
-            <th scope="col">Etat</th>
-            <th scope="col">Nom</th>
-            <th scope="col">Prénom</th>
-            <th scope="col">Nom d'utilisateur</th>
-            <th scope="col">Matricule</th>
-            <th scope="col">Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>123456789</td>
-            <td>2021-01-06T00:00:00.000Z</td>
-            <td>En validation</td>
-            <td>Mohamed</td>
-            <td>Taha</td>
-            <td>mtaha</td>
-            <td>2584</td>
-          </tr>
-          <tr>
-            <td>987654321</td>
-            <td>2021-07-25T00:00:00.000Z</td>
-            <td>Validé</td>
-            <td>Hamid</td>
-            <td>Orrich</td>
-            <td>horrich</td>
-            <td>1594</td>
-          </tr>
-          <tr>
-            <td>852963741</td>
-            <td>2021-09-15T00:00:00.000Z</td>
-            <td>Rejeté</td>
-            <td>Rachid</td>
-            <td>Mahidi</td>
-            <td>rmahidi</td>
-            <td>3576</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="card" >
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Date de création</th>
+                    <th scope="col">Etat</th>
+                    <th scope="col">Nom</th>
+                    <th scope="col">Prénom</th>
+                    <th scope="col">Nom d'utilisateur</th>
+                    <th scope="col">Matricule</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>123456789</td>
+                    <td>2021-01-06T00:00:00.000Z</td>
+                    <td > <span id="state1" style="color: white" class="badge badge-warning"> En validation </span> </td>
+                    <td>Mohamed</td>
+                    <td>Taha</td>
+                    <td>mtaha</td>
+                    <td>2584</td>
+                    <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>987654321</td>
+                    <td>2021-07-25T00:00:00.000Z</td>
+                    <td > <span id="state2" class="badge badge-success"> Validé </span> </td>
+                    <td>Hamid</td>
+                    <td>Orrich</td>
+                    <td>horrich</td>
+                    <td>1594</td>
+                    <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>852963741</td>
+                    <td>2021-09-15T00:00:00.000Z</td>
+                    <td > <span id="state3" class="badge badge-danger"> Rejeté </span> </td>
+                    <td>Rachid</td>
+                    <td>Mahidi</td>
+                    <td>rmahidi</td>
+                    <td>3576</td>
+                    <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+      </div>
+
+      <div class="card" >
+        <div class="card-body">
+            <input style="float: right;" class="btn btn-warning" type="button" value="Ajouter utilisateur">
+        </div>
+      </div>
      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
+     <script src="https://kit.fontawesome.com/536463b772.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
